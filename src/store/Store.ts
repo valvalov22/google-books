@@ -74,7 +74,7 @@ class Store {
 				)
 				.then((result) => {
 					runInAction(() => {
-						this.amount = result.data.totalItems;
+						// this.amount = result.data.totalItems;
 						this.books = this.books.concat(result.data.items);
 					});
 				})
