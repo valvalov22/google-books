@@ -7,7 +7,7 @@ import axios from 'axios';
 
 class Store {
     books: Book[] = [];
-	key = "AIzaSyBQ6Q4TBEp4NOz-lwqtc8N22B9wc6T96Rg";
+	key = process.env.GOOGLE_BOOKS_API_KEY;
 	value = "";
 	loader = false;
 	amount = 0;

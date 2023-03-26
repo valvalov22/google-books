@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# GOOGLE BOOKS FINDER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live demo : https://react-google-books-finder.surge.sh/
 
-## Available Scripts
+## Используемый стэк
 
-In the project directory, you can run:
++ React
++ MobX
++ Tailwind
++ axios
++ react-router-dom^6
++ Typescript
 
-### `npm start`
+### ГЛАВНАЯ СТРАНИЦА
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![homepage](https://github.com/valvalov22/google-books/blob/main/mainpage.png "homepage")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### РЕЗУЛЬТАТ ПОИСКА
 
-### `npm test`
+![find](https://github.com/valvalov22/google-books/blob/main/find.png "find")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Отображает 20 книг, подходящих под запрос.
+Внизу страницы есть кнопка Load more с добавлением 30 книг по запросу.
 
-### `npm run build`
+### ФИЛЬТРАЦИЯ ПО КАТЕГОРИИ
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![category](https://github.com/valvalov22/google-books/blob/main/category.png "category")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### СТРАНИЦА КНИГИ
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![book](https://github.com/valvalov22/google-books/blob/main/book.png "book")
 
-### `npm run eject`
+### NOT FOUND 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![notfound](https://github.com/valvalov22/google-books/blob/main/not%20found.png "notfound")

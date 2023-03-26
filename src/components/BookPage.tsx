@@ -17,7 +17,7 @@ const BookPage = () => {
 	React.useEffect(() => {
 		try {
 			axios
-			.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyBQ6Q4TBEp4NOz-lwqtc8N22B9wc6T96Rg`)
+			.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.GOOGLE_BOOKS_API_KEY}`)
 			.then(res => {
 				setBook(res.data.volumeInfo);
 			})
