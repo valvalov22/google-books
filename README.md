@@ -1,6 +1,6 @@
 # GOOGLE BOOKS FINDER
 
-Live demo : https://react-google-books-finder.surge.sh/
+Live demo : https://valvalov22-google-books.surge.sh/
 
 ## Используемый стэк
 
