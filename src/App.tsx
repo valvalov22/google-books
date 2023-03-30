@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import BooksGrid from './components/BooksGrid';
-import BookPage from './components/BookPage';
+import Header from './components/ui/Header';
+import BooksGrid from './pages/BooksGrid/BooksGrid';
+import BookPage from './pages/BookPage/BookPage';
 import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
   

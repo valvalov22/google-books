@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   return (
     <div>
       <p className='text-lg font-bold'>Ничего не найдено</p>

@@ -6,7 +6,7 @@ type Props = {
     options: string[];
 }
 
-const Select = ({name, options}: Props) => {
+const Select: React.FC<Props> = ({name, options}) => {
   return (
     <div className="flex items-center whitespace-nowrap gap-2 justify-center">
     <label htmlFor="select">{name}</label>

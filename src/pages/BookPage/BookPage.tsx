@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import {  VolumeInfo } from '../types/items';
-import close from '../assets/close.svg';
 import axios from 'axios';
 import {  useNavigate, useParams } from 'react-router-dom';
-import unkbook from '../assets/book.jpg';
-import { store } from '../store/Store';
-import Loader from './Loader';
+import { VolumeInfo } from '../../types/items';
+import { store } from '../../store/Store';
+import close from '../../assets/close.svg';
+import unkbook from '../../assets/book.jpg';
+import Loader from '../../components/ui/Loader';
 
-const BookPage = () => {
+const BookPage: React.FC = () => {
 
 	const [book, setBook] = useState<VolumeInfo>(); 
 	const { id } = useParams();
@@ -17,7 +17,7 @@ const BookPage = () => {
 	React.useEffect(() => {
 		try {
 			axios
-			.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.GOOGLE_BOOKS_API_KEY}`)
+			.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyBQ6Q4TBEp4NOz-lwqtc8N22B9wc6T96Rg`)
 			.then(res => {
 				setBook(res.data.volumeInfo);
 			})

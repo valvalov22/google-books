@@ -1,12 +1,12 @@
 import React from 'react'
-import { store } from '../store/Store';
-import BookCard from './BookCard';
 import { observer } from 'mobx-react-lite';
 import { Link } from 'react-router-dom';
-import Loader from './Loader';
-import NotFound from './NotFound';
+import { store } from '../../store/Store';
+import Loader from '../../components/ui/Loader';
+import BookCard from '../../components/ui/BookCard';
+import NotFound from '../NotFound/NotFound';
 
-const BooksGrid = observer(() => {
+const BooksGrid: React.FC = observer(() => {
     const books = store.books;
     return (
         <div className="p-3">

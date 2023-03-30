@@ -1,13 +1,13 @@
 import { observer } from 'mobx-react-lite';
 import React from 'react'
-import { store } from '../store/Store';
-import { Book } from '../types/items';
-import unkbook from '../assets/book.jpg';
+import { Book } from '../../types/items';
+import { store } from '../../store/Store';
+import unkbook from '../../assets/book.jpg';
 
-const BookCard = observer((book: Book) => {
+
+const BookCard: React.FC<Book> = observer((book) => {
   return (
     <div
-        // className="bg-sky-400 p-1 flex flex-col w-3/5 h-4/5 m-10"
         className="bg-sky-400 p-1 flex flex-col w-4/5 h-4/5 mb-40 text-base"
         onClick={() => {
             store.setId(book.id);
